@@ -67,7 +67,7 @@ def compute_table_values(src_df, reference_tool, reference_series):
 parser = make_parser()
 args = parser.parse_args()
 
-smt_df = pd.read_csv(args.smtlib_tools_csv, sep=';', na_values=['TO'])
+smt_df = pd.read_csv(args.smtlib_tools_csv, sep=';', na_values=['TO', 'ERR'])
 smt_df['name'] = smt_df['name'].apply(strip_smt2_formula)
 smt_df = smt_df.sort_values(by=['name'])
 

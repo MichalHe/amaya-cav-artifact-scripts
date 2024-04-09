@@ -3,7 +3,7 @@
 PYTHON=/home/amaya/amaya/venv/bin/python3
 
 TIMEOUT=60  # seconds
-JOBS=1
+JOBS=2
 RESULTS_DIR=/home/amaya/results
 BENCH_DIR=/home/amaya/amaya/benchmarks/bench
 TINY_MODE_FORMULAE_AMOUNT=3
